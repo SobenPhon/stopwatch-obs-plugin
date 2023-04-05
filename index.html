@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="control.css" />
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <div class="stopwatch">
+      <h2 class="heading">
+        🕹️ Controller |
+        <a href="./browser.html" target="_blank">Goto receiver</a>
+      </h2>
+      <div class="timer">
+        <div class="time">00:00</div>
+        <p class="divider">|</p>
+        <p id="half-status">1st Half</p>
+      </div>
+      <div>
+        <span class="add-time">+00</span>
+        <span class="divider">:</span>
+        <span class="add-timing">00:00</span>
+      </div>
+    </div>
+
+    <div class="controls">
+      <h2>Timing Controls</h2>
+
+      <div class="box half-selection">
+        <h4>Select half</h4>
+        <div class="select-half">
+          <input
+            type="radio"
+            id="first"
+            name="halfSelect"
+            value="first"
+            checked
+          />
+          <label for="first" class="mr-1">1st Half</label>
+          <input type="radio" id="second" name="halfSelect" value="second" />
+          <label for="second">2st Half</label>
+        </div>
+      </div>
+
+      <div class="box start-time">
+        <h4>Set start times:</h4>
+        <label>Minute: </label>
+        <input type="number" id="minute-input" placeholder="mn" />
+        <p id="starttime-error" class="mt-half"></p>
+      </div>
+
+      <div class="box add-time">
+        <h4>Additional Time:</h4>
+        <label>Add minutes: </label>
+        <input type="number" id="addtime-input" placeholder="mn" />
+        <p id="addtime-error" class="mt-half"></p>
+        <div class="btn-group">
+          <button id="start-add">Start</button>
+          <button id="stop-add">Stop</button>
+          <button id="reset-add">Reset</button>
+        </div>
+      </div>
+
+      <div class="btn-group">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+  </body>
+  <script src="control.js"></script>
+</html>

@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.stopwatch {
+  width: 100%;
+  text-align: center;
+  background-color: aqua;
+}
+
+.stopwatch .main-time {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.stopwatch .added-time-area {
+  width: 100%;
+  font-size: 63px;
+  font-weight: 600;
+  color: #cdfa12;
+  margin-top: 5px;
+}
+
+.add-timer {
+  color: #fff;
+}
